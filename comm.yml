@@ -1,6 +1,6 @@
 ---
 - name: test
-  hosts: test
+  hosts: centos
   gather_facts: no
   tasks:
   - name: test
@@ -11,11 +11,11 @@
   - name: Sending an e-mail using the remote machine, not the Ansible controller node
     mail:
 #     host: localhost
-     host: 10.255.115.116
+     host: 192.168.122.139
      port: 25
-     from: in02141m@scrbiasdkcph136.crb.apmoller.net
+     from: veera@test.com
 #     to: devops
-     to: veerabose@in.ibm.com
+     to: root@localhost.localdomain
      subject: Ansible - System {{ inventory_hostname }} is not reachable
      body: Please check the server {{ inventory_hostname }} 
 #    when: "'Connection timed out during banner exchange' in results.stderr" 
