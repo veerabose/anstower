@@ -1,5 +1,4 @@
 ---
 - hosts: centos
   tasks: 
-  - name: ping test
-     ping:
+    - ping:
