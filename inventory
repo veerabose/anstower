@@ -1,0 +1,14 @@
+[apm_grp_cred_unix:children]
+linux_batch1
+
+
+[apm_grp_sshproxy_3hop:children]
+linux_batch1
+
+[linux_batch1]
+SCRBDBPDK006795      ansible_host=10.115.20.223
+SCRBDBYDK006796      ansible_host=10.115.20.230
+
+[db]
+SCRBDBPDK006795
+SCRBDBYDK006796
